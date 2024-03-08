@@ -1,0 +1,148 @@
+body {
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+#hero {
+  position: relative;
+}
+.navbar {
+  height: 100px;
+}
+.contend-proxi {
+  color: white;
+  background: url(../assets/reloj.gif) no-repeat center;
+  background-size: contain;
+  height: 500px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons-social {
+  border-radius: 10px 0 0 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  right: -26px;
+  position: absolute;
+}
+.bi {
+  font-size: 2rem;
+}
+
+.bi:hover{
+  color: black;
+}
+
+
+.btn-down {
+  border: 2px solid rgb(255, 255, 255);
+  color: black;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 93% !important;
+}
+
+.btn-down:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 1px;
+}
+
+.contend {
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(19, 47, 74, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-brand {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+}
+@media (max-width: 442px) {
+  .navbar-brand {
+    max-width: 200px;
+  }
+}
+.nav-link {
+  color: white !important;
+}
+
+.navbar-nav .nav-item a:hover {
+  color: #f7a41d !important;
+}
+.bi-social:hover {
+  color: white;
+}
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Añadido para que el video se ajuste al contenedor sin perder proporciones */
+  z-index: -1; /* Cambiado a -1 para estar detrás del contenido */
+}
+
+.about-ipakket {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url(../assets/paises.svg) no-repeat center;
+  background-size: contain;
+}
+
+.text-contain {
+  max-width: 400px;
+  background-color:  rgba(255, 255, 255, .9);
+  border-radius: 10px;
+}
+
+.nubes {
+  position: absolute;
+  top: 0;
+  height: 30px;
+  width: 100%;
+  -webkit-box-shadow: 0px -89px 64px -26px rgba(255,255,255,1);
+  -moz-box-shadow: 0px -89px 64px -26px rgba(255,255,255,1);
+  box-shadow: 0px -89px 64px -26px rgba(255,255,255,1);
+}
+
+
+/* Agrega estas reglas al final de tu archivo de estilo CSS */
+.nubes-section {
+  position: relative;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.hidden-section {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.about-ipakket .fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
